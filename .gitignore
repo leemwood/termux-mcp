@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log*
+*.log
+.DS_Store
+.env
+.env.*
+# 运行时生成的本地配置与审计日志，不进仓库
+config.json
+*.jsonl

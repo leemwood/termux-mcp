@@ -1,0 +1,38 @@
+{
+  "name": "termux-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local MCP server that lets MCP clients operate the Termux environment on Android",
+  "main": "src/server.js",
+  "bin": {
+    "termux-mcp": "src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "start:http": "node src/server.js --http",
+    "service:start": "bash scripts/start.sh",
+    "service:stop": "bash scripts/stop.sh",
+    "service:status": "bash scripts/status.sh",
+    "motd": "bash scripts/install-motd.sh",
+    "autostart:enable": "bash scripts/autostart-enable.sh",
+    "autostart:disable": "bash scripts/autostart-disable.sh",
+    "doctor": "bash scripts/doctor.sh",
+    "client-config": "bash scripts/client-config.sh",
+    "test": "node test/smoke.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "termux",
+    "android",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}
