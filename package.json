@@ -28,6 +28,14 @@
     "model-context-protocol"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leemwood/termux-mcp.git"
+  },
+  "homepage": "https://github.com/leemwood/termux-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/leemwood/termux-mcp/issues"
+  },
   "engines": {
     "node": ">=18"
   },
